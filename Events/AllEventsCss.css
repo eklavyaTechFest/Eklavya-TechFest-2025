@@ -1,0 +1,261 @@
+/* Dark Theme Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #e0e0e0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+.event-details {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #0b0606;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* Animations */
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+.animate.delay-1 {
+  animation-delay: 0.3s;
+}
+.animate.delay-2 {
+  animation-delay: 0.6s;
+}
+.animate.delay-3 {
+  animation-delay: 0.9s;
+}
+.animate.delay-4 {
+  animation-delay: 1.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title */
+.event-title {
+  font-size: 2.5em;
+  font-family: Georgia, serif;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Overview Section */
+.event-overview {
+  font-size: 1.2em;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+}
+.event-overview h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Slider Section */
+.image-slider {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  height: 400px;
+}
+.slider-inner {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  animation: slide 20s infinite;
+}
+.slider-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Rules and Regulations Section */
+.event-rules {
+  margin-bottom: 20px;
+}
+.event-rules h2 {
+  font-size: 1.8em;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.event-rules p,
+.event-rules li {
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  color: #d0d0d0;
+}
+
+.event-details h2 {
+  color: #fff;
+}
+.event-details h3 {
+  color: #f7b9b9;
+}
+
+/* Winning and Scoring Criteria Section */
+.winning-criteria {
+  margin-bottom: 20px;
+}
+.winning-criteria h2 {
+  font-size: 1.8em;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.winning-criteria p,
+.winning-criteria li {
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  color: #d0d0d0;
+}
+
+/* Prizes Section */
+.prizes-section {
+  margin-bottom: 20px;
+}
+.prizes-section h2 {
+  font-size: 1.8em;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.prizes-section p,
+.prizes-section li {
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  color: #d0d0d0;
+}
+
+/* Venue Section */
+.event-venue {
+  margin-bottom: 20px;
+}
+.event-venue h2 {
+  font-size: 1.8em;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.event-venue p {
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  color: #d0d0d0;
+}
+
+/* Notes Section */
+.event-notes {
+  padding: 15px;
+  background: #360e09;
+  border-left: 5px solid #007bff;
+  margin-bottom: 20px;
+}
+.event-notes h2 {
+  font-size: 1.8em;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.event-notes h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #ff7300;
+}
+.event-notes p {
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  color: #d0d0d0;
+}
+
+/* Bullet List Styles */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+li {
+  margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .event-title {
+    font-size: 2em;
+  }
+  .event-rules h2,
+  .winning-criteria h2,
+  .prizes-section h2,
+  .event-venue h2,
+  .event-notes h2,
+  .event-overview h2 {
+    font-size: 1.5em;
+  }
+  .event-overview,
+  .event-rules p,
+  .winning-criteria p,
+  .prizes-section p,
+  .event-venue p,
+  .event-notes p {
+    font-size: 0.9em;
+  }
+  .image-slider {
+    height: 250px;
+  }
+}
+
+.registerBtn {
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #0b780b;
+  border: 3px solid #3eb900;
+  display: block;
+  text-align: center;
+}
+
+.registerBtn:hover {
+  background-color: transparent;
+  border: 3px solid #3eb900;
+  color: white;
+}
