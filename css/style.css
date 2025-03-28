@@ -56,7 +56,7 @@ body {
   padding: 1rem;
   border-radius: 1rem;
 }
-#registration-rules h4 {
+#registration-rules p {
   font-family: Muli, sans-serif;
   color: black;
   font-weight: bold;
@@ -166,6 +166,36 @@ body {
   }
 }
 
+@media (max-width: 992px) {
+  .registration-info .submenu li {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #deba87;
+    margin-bottom: 1rem;
+  }
+
+  .registration-info .submenu li p {
+    font-family: Muli, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .registration-info .submenu li p a {
+    color: #ff210d;
+    font-size: inherit;
+    display: inline;
+    text-transform: none;
+    margin: 0;
+    padding: 0;
+    size: inherit;
+  }
+
+  .registration-info .submenu li p a:hover {
+    color: #ff8401;
+  }
+}
+
 @media (max-width: 768px) {
   .EklavyaLogo {
     width: 100%;
@@ -183,6 +213,34 @@ body {
     width: 80%;
     margin: 2rem;
   }
+
+  .registration-info .submenu li {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #deba87;
+    margin-bottom: 1rem;
+  }
+
+  .registration-info .submenu li p {
+    font-family: Muli, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .registration-info .submenu li p a {
+    color: #ff210d;
+    font-size: inherit;
+    display: inline;
+    text-transform: none;
+    margin: 0;
+    padding: 0;
+    size: inherit;
+  }
+
+  .registration-info .submenu li p a:hover {
+    color: #ff8401;
+  }
 }
 
 @media (max-width: 480px) {
@@ -199,6 +257,34 @@ body {
   .navLogo {
     height: 30px;
     margin-top: 0.5rem;
+  }
+
+  .registration-info .submenu li {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #deba87;
+    margin-bottom: 1rem;
+  }
+
+  .registration-info .submenu li p {
+    font-family: Muli, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .registration-info .submenu li p a {
+    color: #ff210d;
+    font-size: inherit;
+    display: inline;
+    text-transform: none;
+    margin: 0;
+    padding: 0;
+    size: inherit;
+  }
+
+  .registration-info .submenu li p a:hover {
+    color: #ff8401;
   }
 }
 
