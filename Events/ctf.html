@@ -42,7 +42,7 @@
               <div class="row align-items-center">
                 <div class="col-xl-3 col-lg-3">
                   <div class="logo">
-                    <a href="index.html">
+                    <a href="../index.html">
                       <img
                         style="height: 50px"
                         src="../img/Logos/text_logo.png"
@@ -70,13 +70,13 @@
                     </nav>
                   </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                <!-- <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                   <div class="buy_tkt">
                     <div class="book_btn d-none d-lg-block">
                       <a href="#">Registrations</a>
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <div class="col-12">
                   <div class="mobile_menu d-block d-lg-none"></div>
                 </div>
@@ -130,7 +130,16 @@
     <div class="event-details">
       <!-- Overview Section -->
       <div class="event-overview animate delay-2">
-        <h2>Overview</h2>
+        <span class="head-section">
+          <h2>Overview</h2>
+          <div class="redirect-elem">
+            <span class="down-arrow">&#8595;</span>
+            <span class="down-arrow">&#8595; &nbsp;</span>
+            <a class="btn-redirect" href="#registerBtn">Register</a>
+            <span class="down-arrow">&nbsp; &#8595;</span>
+            <span class="down-arrow">&#8595;</span>
+          </div>
+        </span>
         <p>
           A cybersecurity challenge where individual participants solve
           real-world security puzzles in areas such as web security,
@@ -226,9 +235,10 @@
       <div class="prizes-section animate delay-4">
         <h2>Prizes</h2>
         <ul>
-          <li><strong>First Prize:</strong> [Prize details here]</li>
-          <li><strong>Second Prize:</strong> [Prize details here]</li>
-          <li><strong>Third Prize:</strong> [Prize details here]</li>
+          <li>
+            <strong>Cash Prize</strong>, <strong>Certificates</strong>,
+            <strong>Medals</strong>, <strong>Goodies</strong>
+          </li>
         </ul>
       </div>
 
@@ -239,7 +249,7 @@
       </div>
 
       <!-- Register button  -->
-      <a class="registerBtn" href="#">Register Now</a>
+      <a id="registerBtn" class="registerBtn" href="#">Register Now</a>
     </div>
     <!-- Event Details Ends -->
 
@@ -322,14 +332,14 @@
                     Secure your spot in this challenging cybersecurity
                     competition.
                   </p>
-                  <a
+                  <!-- <a
                     href="#"
                     class="boxed-btn3 wow fadeInUp"
                     data-wow-duration="1s"
                     data-wow-delay=".6s"
                   >
                     Register now
-                  </a>
+                  </a> -->
                 </div>
               </div>
             </div>
