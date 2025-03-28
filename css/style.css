@@ -36,6 +36,50 @@ body {
   font-style: normal;
 }
 
+.navLogos {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#navDsmpuLogo {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navLogo {
+  height: 50px;
+}
+
+#registration-rules {
+  padding: 1rem;
+  border-radius: 1rem;
+}
+#registration-rules h4 {
+  font-family: Muli, sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+.submenu {
+  border-radius: 1rem;
+}
+
+#registration-rules a {
+  color: #ff210d;
+  font-size: inherit;
+  display: inline;
+  text-transform: none;
+  margin: 0;
+  padding: 0;
+  size: inherit;
+}
+
+#registration-rules a:hover {
+  color: #ff8401;
+}
+
 .register_here_btn {
   border: 2px solid #33ff00;
   padding: 0.5rem;
@@ -73,6 +117,10 @@ body {
 
 .university_details img {
   height: 80px;
+}
+
+.university_details p {
+  margin: 0 !important;
 }
 
 .EklavyaLogo {
@@ -146,6 +194,11 @@ body {
   #map a img {
     width: 100%;
     margin: 0rem;
+  }
+
+  .navLogo {
+    height: 30px;
+    margin-top: 0.5rem;
   }
 }
 
