@@ -175,85 +175,202 @@
           </div>
         </span>
         <p>
-          A high-intensity esports tournament featuring BGMI where players
-          compete in a series of matches. Test your strategy, teamwork, and
-          reflexes as you battle to be the ultimate champion in a thrilling
-          virtual arena.
+          A high-intensity esports tournament featuring BGMI, Counter Strike 2,
+          and Asphalt Legends Unite. Test your strategy, teamwork, and reflexes
+          as you battle to be the ultimate champion.
         </p>
       </div>
 
-      <!-- Sliding Images Section -->
-      <div class="image-slider animate delay-2">
-        <div class="slider-inner">
-          <img
-            src="https://via.placeholder.com/1200x400?text=Slide+1"
-            alt="Slide 1"
-          />
-          <img
-            src="https://via.placeholder.com/1200x400?text=Slide+2"
-            alt="Slide 2"
-          />
-          <img
-            src="https://via.placeholder.com/1200x400?text=Slide+3"
-            alt="Slide 3"
-          />
-          <img
-            src="https://via.placeholder.com/1200x400?text=Slide+4"
-            alt="Slide 4"
-          />
+      <!-- Tab Navigation -->
+      <div class="tabs">
+        <ul class="tab-links">
+          <li class="active">
+            <a href="#bgmi"
+              ><img src="../img/Logos/bgmiLogo.png" alt="BGMI"
+            /></a>
+          </li>
+          <li>
+            <a href="#cs2"><img src="../img/Logos/csLogo.png" alt="CS2" /></a>
+          </li>
+          <li>
+            <a href="#asphalt"><img src="../img/Logos/asLogo.png" alt="" /></a>
+          </li>
+        </ul>
+
+        <!-- Sliding Images Section -->
+        <div class="main-wrapper">
+          <div class="slider-btns">
+            <span id="prev-btn">&#8592;</span>
+            <span id="next-btn">&#8594;</span>
+          </div>
+          <div class="slider-wrapper">
+            <div class="dots">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <div class="slides">
+              <img src="../img/event_photos/es1.jpg" alt="nature" />
+            </div>
+            <div class="slides">
+              <img src="../img/event_photos/es2.jpg" alt="nature" />
+            </div>
+            <div class="slides">
+              <img src="../img/event_photos/es3.jpg" alt="nature" />
+            </div>
+            <div class="slides">
+              <img src="../img/event_photos/es4.jpg" alt="nature" />
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content">
+          <!-- BGMI Rules -->
+          <div id="bgmi" class="tab active">
+            <h2>BGMI</h2>
+            <h3>Rules and Regulations</h3>
+            <p><strong>Match Format:</strong></p>
+            <ul>
+              <li>
+                Semi-Final (Day 1): Each player/team plays 4 matches; top 15
+                teams qualify for the finals.
+              </li>
+              <li>
+                Final (Day 2): Top 4 teams advance to a final round featuring a
+                Team Deathmatch (TDM) showdown.
+              </li>
+            </ul>
+            <p><strong>Point System:</strong></p>
+            <ul>
+              <li>
+                <strong>Placement Points:</strong> 1st – 10 points, 2nd – 6
+                points, 3rd – 4 points, 4th – 3 points, 5th – 2 points, 6th to
+                9th – 1 point each.
+              </li>
+              <li><strong>Kill Points:</strong> 1 point for every kill.</li>
+              <li>
+                <strong>MVP Award:</strong> Given to the player with the most
+                kills in one match.
+              </li>
+            </ul>
+            <p><strong>Team Guidelines:</strong></p>
+            <ul>
+              <li>Both individuals and teams can participate.</li>
+              <li>A team can have a maximum of 4 participants.</li>
+              <li>All team members must be from the same institute.</li>
+              <li>
+                Each team must have a unique name; inappropriate names may be
+                rejected.
+              </li>
+              <li>
+                If participating as a team, a team representative must be
+                designated with valid contact details during registration.
+              </li>
+            </ul>
+          </div>
+
+          <!-- CS2 Rules -->
+          <div id="cs2" class="tab">
+            <h2>Counter-Strike 2 (CS2)</h2>
+            <h3>Rules and Regulations</h3>
+            <p><strong>Match Format:</strong></p>
+            <ul>
+              <li>
+                Players are randomly assigned into teams of 5 for a 5v5 Team
+                Deathmatch (TDM).
+              </li>
+              <li>
+                Teams compete against each other in the preliminary rounds.
+              </li>
+              <li>
+                The winning teams advance to a Deathmatch Round where individual
+                players compete 1v1.
+              </li>
+              <li>
+                The top 3 players from the Deathmatch Round are shortlisted for
+                a final 1v1 battle.
+              </li>
+              <li>
+                The last standing player in the final round is declared the
+                winner.
+              </li>
+            </ul>
+            <p><strong>Point System:</strong></p>
+            <ul>
+              <li>
+                Advancement is determined by match victories and individual
+                performance in the Deathmatch Round.
+              </li>
+            </ul>
+            <p><strong>Team Guidelines:</strong></p>
+            <ul>
+              <li>Both individuals and teams can register.</li>
+              <li>Each team consists of 5 players.</li>
+              <li>All team members must be from the same institute.</li>
+              <li>
+                Each team must have a unique name; inappropriate names may be
+                rejected.
+              </li>
+              <li>
+                A team representative with valid contact details must be
+                designated during registration.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Asphalt Legends Unite Rules -->
+          <div id="asphalt" class="tab">
+            <h2>Asphalt Legends Unite</h2>
+            <h3>Rules and Regulations</h3>
+            <p><strong>Match Format:</strong></p>
+            <ul>
+              <li>Each match consists of 4 to 6 players.</li>
+              <li>A total of 8 games will be hosted.</li>
+              <li>In each game, the top player qualifies for the finals.</li>
+              <li>
+                Finals: The 8 qualifiers compete in one final race. The winner
+                is declared the champion, and the player with the most
+                knockdowns receives additional perks.
+              </li>
+            </ul>
+            <p><strong>Point System:</strong></p>
+            <ul>
+              <li>
+                Advancement is based solely on placement; no additional point
+                system is applied.
+              </li>
+            </ul>
+            <p><strong>Team Guidelines:</strong></p>
+            <ul>
+              <li>Both individuals and teams can participate.</li>
+              <li>
+                For Asphalt Legends Unite, teams have a maximum of 4
+                participants.
+              </li>
+              <li>All team members must be from the same institute.</li>
+              <li>
+                Each team must have a unique name; inappropriate names may be
+                rejected.
+              </li>
+              <li>
+                A team representative with valid contact details must be
+                designated during registration.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <!-- Rules and Regulations Section -->
-      <div class="event-rules animate delay-3">
-        <h2>Rules and Regulations</h2>
-        <p><strong>Match Format:</strong></p>
-        <ul>
-          <li>
-            Semi-Final (Day 1): Each player/team plays 4 matches; top 15 teams
-            qualify for the finals.
-          </li>
-          <li>
-            Final (Day 2): Top 4 teams advance to a final round featuring a Team
-            Deathmatch (TDM) showdown.
-          </li>
-        </ul>
-        <p><strong>Point System:</strong></p>
-        <ul>
-          <li>
-            <strong>Placement Points:</strong> 1st – 10 points, 2nd – 6 points,
-            3rd – 4 points, 4th – 3 points, 5th – 2 points, 6th to 9th – 1 point
-            each.
-          </li>
-          <li><strong>Kill Points:</strong> 1 point for every kill.</li>
-          <li>
-            <strong>MVP Award:</strong> Given to the player with the most kills
-            in one match.
-          </li>
-        </ul>
-        <p><strong>Team Guidelines:</strong></p>
-        <ul>
-          <li>Both individuals and teams can participate.</li>
-          <li>A team can have a maximum of four participants.</li>
-          <li>All team members must be from the same institute.</li>
-          <li>
-            Each team must have a unique name; inappropriate names may be
-            rejected.
-          </li>
-          <li>
-            If participating as a team, a team representative must be designated
-            with valid contact details during registration.
-          </li>
-        </ul>
-      </div>
+      <hr />
 
       <!-- Winning and Scoring Criteria Section -->
       <div class="winning-criteria animate delay-3">
         <h2>Winning and Scoring Criteria</h2>
         <ul>
           <li>
-            The overall winner is determined by the cumulative placement and
-            kill points.
+            The overall winner is determined by cumulative performance and match
+            victories.
           </li>
           <li>
             MVP and Impact Player Awards are given based on exceptional
@@ -266,10 +383,7 @@
       <div class="prizes-section animate delay-4">
         <h2>Prizes</h2>
         <ul>
-          <li>
-            <strong>Cash Prize</strong>, <strong>Certificates</strong>,
-            <strong>Medals</strong>
-          </li>
+          <li><strong>Cash Prizes, Certificates, and Medals</strong></li>
         </ul>
       </div>
 
@@ -279,7 +393,7 @@
         <p>Lab (Room No. 324), New Academic Building</p>
       </div>
 
-      <!-- Register button  -->
+      <!-- Register Button -->
       <a id="registerBtn" class="registerBtn" href="#">Register Now</a>
     </div>
     <!-- Event Details Ends -->
@@ -420,5 +534,6 @@
     <script src="../js/jquery.validate.min.js"></script>
     <script src="../js/mail-script.js"></script>
     <script src="../js/main.js"></script>
+    <script src="./imgSlider.js"></script>
   </body>
 </html>
