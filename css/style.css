@@ -98,6 +98,82 @@ body {
   background-color: transparent;
 }
 
+.countdown-timer {
+  background-color: #2323234b;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  /* display: inline-block; */
+  text-align: center;
+
+  min-width: 280px;
+  max-width: 650px;
+  width: 100%;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+/* Styling for the number elements */
+#days,
+#hours,
+#minutes,
+#seconds {
+  display: inline-block;
+  font-size: 4.5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0 4px;
+  min-width: 55px;
+}
+
+/* Text styling */
+.countdown-timer {
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 480px) {
+  .countdown-timer {
+    padding: 15px 10px;
+    font-size: 1rem;
+    bottom: 0rem;
+  }
+
+  #days,
+  #hours,
+  #minutes,
+  #seconds {
+    font-size: 1.8rem;
+    min-width: 40px;
+  }
+}
+
+@media (max-width: 360px) {
+  .countdown-timer {
+    font-size: 0.8rem;
+    padding: 10px 10px;
+    bottom: 0rem;
+  }
+
+  #days,
+  #hours,
+  #minutes,
+  #seconds {
+    font-size: 1.5rem;
+    min-width: 35px;
+    margin: 0 2px;
+  }
+}
+
 #map {
   background-color: black;
 }
@@ -2214,7 +2290,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_about.scss */
 .about_area {
-  padding-bottom: 150px;
+  padding-bottom: 1px;
   position: relative;
   margin-top: -2px;
 }
