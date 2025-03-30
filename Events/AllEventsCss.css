@@ -295,13 +295,13 @@ li {
 }
 
 .registerBtn:hover {
-  background-color: transparent;
-  border: 3px solid #3eb900;
+  background-color: #0b780b60;
+  border: 3px solid #57ff03;
   color: white;
 }
 
 hr {
-  border: 1px solid #ffffffb6;
+  border: 1px solid #ffffff70;
   margin: 2rem;
 }
 
@@ -320,6 +320,10 @@ hr {
 
 .tab-links a img {
   height: 50px;
+}
+
+.tab-links a img:hover {
+  transform: scale(130%);
 }
 
 @media (max-width: 480px) {
