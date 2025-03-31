@@ -2950,74 +2950,240 @@ h3 {
 
 /* line 1, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
 .footer {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-repeat: no-repeat;
   background-size: cover;
   background: #000000;
   position: relative;
   z-index: 9;
+  margin: 5rem auto 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* line 9, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-.footer .footer_top {
-  padding-top: 148px;
-  padding-bottom: 140px;
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 10rem;
 }
 
-@media (max-width: 767px) {
-  /* line 9, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-  .footer .footer_top {
-    padding-top: 60px;
-    padding-bottom: 30px;
+.footer_top {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* padding: 0 10rem; */
+}
+
+.footer_top div {
+  flex: 1;
+  text-align: center;
+}
+
+.address_details {
+  border-right: 1px solid #ffffff5b;
+}
+
+.address_details h3 img {
+  height: 3rem;
+}
+
+.footer_container h3 {
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.footer_container h4 {
+  color: rgb(39, 132, 255);
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.footer_container p {
+  color: #ffb700;
+  /* font-size: 1.5rem; */
+  line-height: 1.5;
+}
+
+.footer-social-media {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer_bottom p {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 0;
+  font-weight: bold;
+}
+
+/* From Uiverse.io by vinodjangid07 */
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  z-index: -1;
+  border-radius: 9px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+}
+/* Responsivness */
+@media (max-width: 1024px) {
+  .footer {
+    margin: 5rem auto 5rem;
+    justify-content: center;
+  }
+
+  .footer_container {
+    padding: 0 7rem;
   }
 }
+@media (max-width: 992px) {
+  .footer {
+    margin: 5rem auto 5rem;
+    justify-content: center;
+  }
 
-/* line 17, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-.footer .footer_top .footer_widget h4 {
-  font-size: 30px;
-  font-weight: 400;
-  color: #ff4533;
-  margin-bottom: 24px;
-}
+  .footer_container {
+    padding: 0 5rem;
+  }
 
-/* line 23, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-.footer .footer_top .footer_widget h3 {
-  font-size: 30px;
-  font-weight: 400;
-  color: #fff;
-}
+  .footer_bottom p {
+    font-size: 1.5;
+  }
 
-/* line 28, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-.footer .footer_top .footer_widget p {
-  margin-top: 25px;
-  margin-bottom: 41px;
-}
+  .footer_container h3 {
+    font-size: 1.5rem;
+  }
 
-/* line 34, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-.footer .copy-right_text {
-  padding-bottom: 45px;
-}
-
-/* line 36, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-.footer .copy-right_text .copy_right {
-  font-size: 14px;
-  color: #aab1b7;
-  margin-bottom: 0;
-  font-weight: 400;
-  font-family: "Muli", sans-serif;
-}
-
-@media (max-width: 767px) {
-  /* line 36, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-  .footer .copy-right_text .copy_right {
-    font-size: 14px;
+  .footer_container h4 {
+    font-size: 1.5rem;
   }
 }
+@media (max-width: 768px) {
+  .footer {
+    margin: 5rem auto 5rem;
+    justify-content: center;
+  }
 
-/* line 45, ../../Arafath/CL/December/236. Event-02/HTML/scss/_footer.scss */
-.footer .copy-right_text .copy_right a {
-  color: #ff4533;
+  .footer_container {
+    padding: 0 2rem;
+  }
+
+  .footer_top {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .address_details {
+    border-right: none;
+    border-bottom: 1px solid #ffffff5b;
+    width: fit-content;
+    padding-bottom: 2rem;
+  }
+
+  .address_details h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .address_details h3 img {
+    width: 20%;
+    height: auto;
+  }
+
+  .footer_bottom p {
+    font-size: 1.5rem;
+  }
+
+  .footer_container h3 {
+    font-size: 1.5rem;
+  }
+
+  .footer_container h4 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .footer_bottom p {
+    font-size: 1.2rem;
+  }
+
+  .footer_container h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer_container h4 {
+    font-size: 1.2rem;
+  }
 }
 
 /*=================== contact banner start ====================*/
