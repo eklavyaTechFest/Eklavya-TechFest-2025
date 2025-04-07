@@ -114,12 +114,27 @@ body {
 .event-rules {
   margin-bottom: 20px;
 }
-.event-rules h2 {
+.event-rules div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 0 0;
+}
+
+.event-rules div h2 {
   font-size: 1.8em;
   font-family: Verdana, sans-serif;
   margin-bottom: 10px;
   color: #ffffff;
 }
+
+.event-rules div p {
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fca730;
+}
+
 .event-rules p,
 .event-rules li {
   font-size: 1em;
