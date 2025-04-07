@@ -1,4 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Added: Intersection Observer to add 'in-view' class when .accordion enters viewport
+  const accordions = document.querySelectorAll(".accordion");
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  accordions.forEach((acc) => {
+    observer.observe(acc);
+  });
+
   const accordionHeadings = document.querySelectorAll(".accordion-heading");
 
   accordionHeadings.forEach((heading) => {
