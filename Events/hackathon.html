@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../css/slicknav.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="AllEventsCss.css" />
+    <link rel="stylesheet" href="./hackathon_ps.css">
   </head>
   <body>
     <!--[if lte IE 9]>
@@ -211,9 +212,376 @@
       </div>
 
       <!-- Problem Statements -->
-      <div>
-
+      <div class="problem_statements">
+        <h1>Problem Statements</h1>
+  
+        <div class="software_ps">
+          <h2>Software:</h2>
+          <div>
+            <!-- Software Problem Statements -->
+            <div class="accordion">
+              <div class="accordion-heading">
+                <span>1) Medical Card Transaction Management System</span>
+                <span class="accordion-icon">▼</span>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  A Company, XYZ provides medical cards with some balance to their
+                  ex-employees. Make a web application to manage these
+                  Transactions.
+                </p>
+  
+                <div class="constraints">
+                  <h4>CONSTRAINTS:</h4>
+                  <ul>
+                    <li>Web application must consist User and Admin Panels.</li>
+                    <li>
+                      Assume that List of ex-employees is pre-existing (populate
+                      database for user with testing data).
+                    </li>
+                    <li>
+                      <strong>User Page:</strong> After successful login user with
+                      role 'USER' should be seeing a page consisting his/her a)
+                      Name, b)Employee-code, c) Address, d) Medical Card no. And
+                      Below the personal details a table of transactions done by
+                      his/her card, consisting a) claimed amount, b) passed
+                      amount, c) month, d) year and e) remarks.
+                    </li>
+                    <li>
+                      <strong>Admin Page:</strong> After successful login with
+                      role 'ADMIN' THE USER MUST BE redirected to the admin page,
+                      containing certain utilities for the admin:
+                      <ol>
+                        <li>
+                          Update Feature - the admin can update or change any
+                          details about the employee.
+                        </li>
+                        <li>
+                          Transaction Dump: A provision for admin to upload
+                          xlsx/csv file and its data directly to the database
+                          associated.
+                        </li>
+                        <li>
+                          Add Employee feature: admins can add employees to the
+                          database if new employee has to be added.
+                        </li>
+                      </ol>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+  
+            <div class="accordion">
+              <div class="accordion-heading">
+                <span
+                  >2) Carbon Footprint Quantification for Indian Coal Mines</span
+                >
+                <span class="accordion-icon">▼</span>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  A web application specifically designed for Indian coal mines to
+                  quantify their carbon footprint and explore pathways to carbon
+                  neutrality.
+                </p>
+  
+                <div class="description">
+                  <h4>Description:</h4>
+                  <p>
+                    India faces a complex challenge in balancing its reliance on
+                    coal for energy with its climate change commitments. Coal
+                    mining is a major source of carbon emissions, a greenhouse gas
+                    contributing to global warming. To achieve carbon neutrality,
+                    the Indian coal sector needs to offset its emissions. This can
+                    be done through a combination of strategies like reducing
+                    emissions from mining activities, adopting cleaner
+                    technologies, and offsetting remaining emissions by planting
+                    trees that absorb carbon dioxide. A web-based application can
+                    be a powerful tool in this journey by helping quantify a
+                    mine's carbon footprint and evaluate potential pathways to
+                    carbon neutrality.
+                  </p>
+  
+                  <p>The web based application will have following objectives:</p>
+                  <ul>
+                    <li>
+                      Activity wise quantification of Carbon emission in Coal
+                      Mines
+                    </li>
+                    <li>Estimation of existing Carbon Sinks</li>
+                    <li>
+                      Gap analysis between C emission and sinks and suggesting
+                      pathways to carbon neutrality
+                    </li>
+                  </ul>
+                </div>
+  
+                <div class="expected-solution">
+                  <h4>Expected Solution:</h4>
+                  <p>A comprehensive software solution that includes:</p>
+                  <ul>
+                    <li>
+                      <strong>Emission estimation:</strong> The app would allow
+                      users to input data on various mining activities (e.g.,
+                      excavation, transportation, equipment usage) and estimate
+                      the associated carbon emissions based on established
+                      emission factors. Estimation of Per Capita emissions of a
+                      Mine.
+                    </li>
+                    <li>
+                      <strong>Carbon Neutrality Pathways:</strong> The app could
+                      offer features for simulating different emission reduction
+                      strategies like:
+                      <ul>
+                        <li>
+                          Clean technologies: Assessing the impact of adopting
+                          electric vehicles, methane capture systems, and
+                          renewable energy sources for mine operations.
+                        </li>
+                        <li>
+                          Afforestation offsets: Calculating the amount of land
+                          required for tree plantation to offset remaining
+                          emissions based on state specific afforestation plan and
+                          Carbon emission reduction.
+                        </li>
+                        <li>
+                          Other Renewables: explore alternative use of energy to
+                          reduce direct electricity consumption.
+                        </li>
+                        <li>
+                          Any other pathways: Carbon Credits: Estimation of
+                          potential Carbon credit earned as per present market
+                          rates.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong>Data visualization:</strong> The app should present
+                      results visually, using charts and graphs to track emission
+                      trends and the effectiveness of implemented strategies.
+                    </li>
+                    <li>
+                      <strong>Scalability:</strong> Design the app to accommodate
+                      different mine sizes and types (underground vs open-cast).
+                    </li>
+                  </ul>
+  
+                  <p><strong>Benefits:</strong></p>
+                  <ul>
+                    <li>
+                      Transparency: Providing a clear picture of a mine's carbon
+                      footprint.
+                    </li>
+                    <li>
+                      Decision support: Helping mine operators make informed
+                      choices for emission reduction.
+                    </li>
+                    <li>
+                      Cost savings: Identifying opportunities to optimize
+                      operations and potentially reduce costs associated with
+                      emissions.
+                    </li>
+                    <li>
+                      Sustainability goals: Aiding Indian coal mines in their
+                      journey towards carbon neutrality and supporting the
+                      country's overall climate goals.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+  
+            <div class="accordion">
+              <div class="accordion-heading">
+                <span>3) Smart Classroom Management Software</span>
+                <span class="accordion-icon">▼</span>
+              </div>
+              <div class="accordion-content">
+                <p>
+                  Smart Classroom Management Software for Enhanced Learning
+                  Environments
+                </p>
+  
+                <div class="description">
+                  <h4>Description:</h4>
+                  <p>
+                    In modern educational settings, managing classrooms
+                    efficiently while ensuring a conducive learning environment is
+                    crucial. Traditional methods of classroom management are often
+                    manual, time-consuming, and prone to human error, which can
+                    disrupt the learning process. Leveraging software-based
+                    solutions in classroom management can enhance operational
+                    efficiency, ensure safety, and create an engaging learning
+                    atmosphere for students. This project aims to develop a smart
+                    software solution to streamline classroom operations, improve
+                    resource utilization, and enhance the overall learning
+                    experience.
+                  </p>
+  
+                  <p>
+                    The Smart Classroom Management Software (SCMS) can utilize
+                    advanced algorithms, data analytics, and cloud-based
+                    technologies to automate various aspects of classroom
+                    management. The system can potentially include (but not
+                    limited to) features such as:
+                  </p>
+                  <ol>
+                    <li>
+                      <strong>Attendance Automation:</strong> Use facial
+                      recognition algorithms or mobile app-based check-ins to
+                      automatically record student attendance. Generate real-time
+                      attendance reports accessible by teachers and
+                      administration.
+                    </li>
+                    <li>
+                      <strong>Resource Management:</strong> Track the usage of
+                      classroom resources such as projectors, computers, and other
+                      teaching aids through a centralized software platform.
+                      Automate the scheduling and maintenance of these resources
+                      to minimize downtime.
+                    </li>
+                    <li>
+                      <strong>Safety and Security Alerts:</strong> Implement
+                      software-based alerts for emergencies such as fire,
+                      unauthorized access, or other security concerns, integrated
+                      with existing security systems. Alert authorities and
+                      stakeholders through real-time notifications and reports.
+                    </li>
+                    <li>
+                      <strong>Interactive Learning Tools:</strong> Integration
+                      with existing smart boards and interactive displays to adapt
+                      to the teaching content and student needs. Provide real-time
+                      feedback and analytics on student engagement and
+                      performance.
+                    </li>
+                    <li>
+                      <strong>Data Analytics:</strong> Collect and analyze data on
+                      various classroom activities to provide insights into
+                      student behavior, attendance patterns, and resource
+                      utilization. Generate predictive reports to aid in
+                      decision-making and improve educational outcomes. AI-based
+                      Chatbot for helping students to understand their learning
+                      gaps.
+                    </li>
+                  </ol>
+                </div>
+  
+                <div class="expected-solution">
+                  <h4>Expected Output:</h4>
+                  <p>
+                    A fully functional prototype of the Smart Classroom Management
+                    Software (SCMS) demonstrating the above features through the
+                    integration of advanced algorithms, data analytics, and
+                    cloud-based technology. A user-friendly interface for
+                    students, teachers and administrators to interact with the
+                    system and access reports.
+                  </p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="accordion">
+              <div class="accordion-heading">
+                <span>4) Online Chatbot based Ticketing System for Museums</span>
+                <span class="accordion-icon">▼</span>
+              </div>
+              <div class="accordion-content">
+                <div class="description">
+                  <h4>Description:</h4>
+                  <p>
+                    Visitors to museums often face several significant challenges
+                    due to manual ticket booking systems. One prominent issue is
+                    the inefficiency and time consumption associated with the
+                    process. Long queues are common, especially during peak hours,
+                    weekends, or special exhibitions, leading to frustration and
+                    impatience among visitors. Besides the wait times, the manual
+                    system is prone to errors, such as incorrect ticket issuance,
+                    double bookings, or lost records, which can cause further
+                    delays and inconvenience. Overall, these challenges associated
+                    with manual ticket booking systems significantly detract from
+                    the visitor experience, reducing satisfaction and potentially
+                    impacting the museum's reputation and visitor numbers.
+                  </p>
+  
+                  <p>
+                    The implementation of a chatbot for ticket booking in a museum
+                    addresses several critical needs, enhancing the overall
+                    visitor experience and streamlining museum operations. Here
+                    are the key reasons for adopting a chatbot ticket booking
+                    system:
+                  </p>
+                  <ol>
+                    <li>Improved Customer Service</li>
+                    <li>Efficient Handling of High Volumes</li>
+                    <li>Cost-Effective Solution</li>
+                    <li>Data Collection and Analysis</li>
+                    <li>Accessibility</li>
+                    <li>Reduced Human Error</li>
+                    <li>Multilingual Support</li>
+                    <li>Enhanced Marketing and Promotion</li>
+                  </ol>
+                </div>
+  
+                <div class="expected-solution">
+                  <h4>Expected Solution:</h4>
+                  <p>
+                    An efficient and responsive multilingual chatbot based
+                    ticketing system that can handle all kinds of bookings from
+                    gate entry to shows. Payment gateway should also be integrated
+                    to make it fully free from human intervention. It will also
+                    provide analytics to aid in more efficient decision making
+                    process.
+                  </p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="accordion">
+              <div class="accordion-heading">
+                <span>5) Assured Contract Farming System</span>
+                <span class="accordion-icon">▼</span>
+              </div>
+              <div class="accordion-content">
+                <div class="description">
+                  <h4>Description:</h4>
+                  <p>
+                    Farmers often face uncertainties in market access, leading to
+                    fluctuating incomes. Contract farming can provide stability by
+                    ensuring farmers have guaranteed buyers for their produce.
+                  </p>
+  
+                  <p>
+                    Develop a comprehensive platform that facilitates assured
+                    contract farming agreements between farmers and buyers. This
+                    platform will enable transparent communication, secure
+                    contracts, and timely payments, ensuring farmers have a
+                    reliable market for their crops.
+                  </p>
+                </div>
+  
+                <div class="expected-solution">
+                  <h4>Expected Solution:</h4>
+                  <p>
+                    An online marketplace that connects farmers with potential
+                    buyers, offering tools for contract management, price
+                    negotiation, and secure payment processing, thereby enhancing
+                    income stability and reducing market risks.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="hardware_ps">
+          <h2>Hardware:</h2>
+          <div>
+            <p>hardware problems will update soon.</p>
+          </div>
+        </div>
       </div>
+      
 
       <!-- Rules and Regulations Section -->
       <div class="event-rules animate delay-3">
@@ -294,6 +662,11 @@
         <ul>
           <li>Portfolio submission by April 20, 2025.</li>
         </ul>
+        <h3>Participation in other events</h3>
+        <ul>
+          <li>If you are taking part in Hackathon then you will not able to participate in any other events held on 23/04/2025.</li>
+        </ul>
+        <h3>Registration Closes on 19/04/2025</h3>
       </div>
 
       <!-- Register button  -->
@@ -417,5 +790,6 @@
     <script src="../js/mail-script.js"></script>
     <script src="../js/main.js"></script>
     <script src="./imgSlider.js"></script>
+    <script src="./accordion.js"></script>
   </body>
 </html>

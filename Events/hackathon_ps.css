@@ -1,0 +1,303 @@
+.problem_statements {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 20px;
+  background-color: #0b0606;
+  /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); */
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-family: Georgia, serif;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.software_ps,
+.hardware_ps {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #007bff;
+  font-family: Verdana, sans-serif;
+  font-size: 1.8em;
+}
+
+.accordion {
+  margin-bottom: 15px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  overflow: hidden;
+  animation: fadeInUp 1s forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.accordion:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.accordion:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.accordion:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+.accordion:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+.accordion:nth-child(5) {
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.accordion-heading {
+  background-color: #1a1a1a;
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #d0d0d0;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-heading:hover {
+  background-color: #2a2a2a;
+}
+
+.accordion-heading.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  padding: 0 20px;
+  background-color: #121212;
+}
+
+.accordion-content.show {
+  max-height: 2000px;
+  padding: 20px;
+}
+
+.accordion-icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion-heading.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.constraints,
+.description,
+.expected-solution {
+  margin-top: 15px;
+}
+
+.constraints h4,
+.description h4,
+.expected-solution h4 {
+  margin-bottom: 10px;
+  color: #f7b9b9;
+  font-family: Verdana, sans-serif;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  color: #d0d0d0;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #d0d0d0;
+}
+
+strong {
+  color: #fca730;
+}
+
+/* Notes Section */
+.hardware_ps p {
+  padding: 15px;
+  background: #360e09;
+  border-left: 5px solid #007bff;
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #d0d0d0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2,
+  .constraints h4,
+  .description h4,
+  .expected-solution h4 {
+    font-size: 1.5em;
+  }
+  p,
+  li {
+    font-size: 0.9em;
+  }
+}
+
+/* Mobile enhancements */
+@media (max-width: 768px) {
+  /* Better readability on small screens */
+  .problem_statements {
+    padding: 10px;
+    margin: 0.5rem auto;
+  }
+
+  /* Improved spacing for headings */
+  h1 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+
+  /* More compact accordion design */
+  .accordion-heading {
+    padding: 12px 15px;
+    font-size: 0.95em;
+  }
+
+  .accordion-content.show {
+    padding: 15px;
+  }
+
+  /* Better text readability */
+  p,
+  li {
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+
+  /* Reduce padding in content areas */
+  .constraints h4,
+  .description h4,
+  .expected-solution h4 {
+    font-size: 1.2em;
+    margin-top: 12px;
+  }
+
+  /* Improve list appearance */
+  ul,
+  ol {
+    padding-left: 15px;
+  }
+
+  /* Make hardware note more compact */
+  .hardware_ps p {
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+  }
+
+  /* Smoother animations */
+  .accordion {
+    transition: all 0.3s ease;
+  }
+
+  /* Fixed position for active accordions */
+  .accordion-heading.active {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  /* Touch-friendly button sizes */
+  .accordion-icon {
+    font-size: 1.2em;
+    padding: 5px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .accordion-heading {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  p,
+  li {
+    font-size: 0.9em;
+  }
+
+  /* Stack accordion headings better */
+  .accordion-heading {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
+
+  /* Adjust spacing */
+  .accordion-content.show {
+    padding: 12px 8px;
+  }
+}
+
+/* Dark mode improvements */
+@media (prefers-color-scheme: dark) {
+  .accordion-heading {
+    background-color: #222;
+  }
+
+  .accordion-heading:hover {
+    background-color: #333;
+  }
+
+  .accordion-content {
+    background-color: #1a1a1a;
+  }
+}
+
+/* Improved accessibility */
+.accordion-heading:focus {
+  outline: 2px solid #007bff;
+  outline-offset: -2px;
+}
+
+/* Smoother transitions */
+.accordion-content {
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    padding 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
