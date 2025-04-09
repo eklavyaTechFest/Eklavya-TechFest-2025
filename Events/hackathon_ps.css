@@ -20,7 +20,8 @@ h1 {
   margin-bottom: 30px;
 }
 
-h2 {
+.software_ps h2,
+.hardware_ps h2 {
   color: #ffffff;
   margin-bottom: 15px;
   padding-bottom: 10px;
