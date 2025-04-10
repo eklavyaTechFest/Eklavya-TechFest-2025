@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../css/slicknav.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="AllEventsCss.css" />
+    <link rel="stylesheet" href="accordion.css">
   </head>
   <body>
     <!--[if lte IE 9]>
@@ -185,15 +186,14 @@
       <div class="tabs">
         <ul class="tab-links">
           <li class="active">
-            <a href="#bgmi"
-              ><img src="../img/Logos/bgmiLogo.png" alt="BGMI"
-            /></a>
+            <img src="../img/Logos/bgmiLogo.png" alt="BGMI"
+            />
           </li>
           <li>
-            <a href="#cs2"><img src="../img/Logos/csLogo.png" alt="CS2" /></a>
+            <img src="../img/Logos/csLogo.png" alt="CS2" />
           </li>
           <li>
-            <a href="#asphalt"><img src="../img/Logos/asLogo.png" alt="" /></a>
+            <img src="../img/Logos/asLogo.png" alt="" />
           </li>
         </ul>
 
@@ -225,140 +225,151 @@
           </div>
         </div>
 
-        <div class="tab-content">
-          <!-- BGMI Rules -->
-          <div id="bgmi" class="tab active">
-            <h2>BGMI</h2>
-            <h3>Rules and Regulations</h3>
-            <p><strong>Match Format:</strong></p>
-            <ul>
-              <li>
-                Semi-Final (Day 1): Each player/team plays 4 matches; top 15
-                teams qualify for the finals.
-              </li>
-              <li>
-                Final (Day 2): Top 4 teams advance to a final round featuring a
-                Team Deathmatch (TDM) showdown.
-              </li>
-            </ul>
-            <p><strong>Point System:</strong></p>
-            <ul>
-              <li>
-                <strong>Placement Points:</strong> 1st – 10 points, 2nd – 6
-                points, 3rd – 4 points, 4th – 3 points, 5th – 2 points, 6th to
-                9th – 1 point each.
-              </li>
-              <li><strong>Kill Points:</strong> 1 point for every kill.</li>
-              <li>
-                <strong>MVP Award:</strong> Given to the player with the most
-                kills in one match.
-              </li>
-            </ul>
-            <p><strong>Team Guidelines:</strong></p>
-            <ul>
-              <li>Both individuals and teams can participate.</li>
-              <li>A team can have a maximum of 4 participants.</li>
-              <li>All team members must be from the same institute.</li>
-              <li>
-                Each team must have a unique name; inappropriate names may be
-                rejected.
-              </li>
-              <li>
-                If participating as a team, a team representative must be
-                designated with valid contact details during registration.
-              </li>
-            </ul>
+        <div class="gaming_rules">
+          <h2>Gaming Tournaments</h2>
+          
+          <!-- BGMI Rules Accordion -->
+          <div class="accordion">
+            <div class="accordion-heading">
+              <span>1) BGMI</span>
+              <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+              <h3>Rules and Regulations</h3>
+              
+              <p><strong>Match Format:</strong></p>
+              <ul>
+                <li>Registration Fee: ₹1000 per squad / ₹300 per player.</li>
+                <li>Each team consists of 4 players (standard squad format).</li>
+                <li>
+                  Day 1 (23rd April) &amp; Day 2 (24th April) Match Order:
+                  <ul>
+                    <li>Match 1 – Erangel</li>
+                    <li>Match 2 – Miramar</li>
+                    <li>Match 3 – Sanhok</li>
+                    <li>Match 4 – Erangel</li>
+                  </ul>
+                </li>
+              </ul>
+              
+              <p><strong>Point System:</strong></p>
+              <ul>
+                <li>
+                  <strong>Placement Points:</strong>
+                  <ul>
+                    <li>1st – 10 points</li>
+                    <li>2nd – 6 points</li>
+                    <li>3rd – 5 points</li>
+                    <li>4th – 4 points</li>
+                    <li>5th – 3 points</li>
+                    <li>6th – 2 points</li>
+                    <li>7th – 1 point</li>
+                    <li>8th – 1 point</li>
+                    <li>9th to 16th – 0 points</li>
+                  </ul>
+                </li>
+                <li><strong>Kill Points:</strong> 1 point per finish (kill).</li>
+              </ul>
+              
+              <p>Squad, Duo and solo players are allowed to register.</p>
+
+              <p><strong>Team Guidelines:</strong></p>
+              <ul>
+                <li>Each team consist of 4 players.</li>
+                <li>Each team must have a unique and appropriate name.</li>
+                <li>A valid contact number must be provided during registration.</li>
+              </ul>
+            </div>
           </div>
-
-          <hr />
-
-          <!-- CS2 Rules -->
-          <div id="cs2" class="tab">
-            <h2>Counter-Strike 2 (CS2)</h2>
-            <h3>Rules and Regulations</h3>
-            <p><strong>Match Format:</strong></p>
-            <ul>
-              <li>
-                Players are randomly assigned into teams of 5 for a 5v5 Team
-                Deathmatch (TDM).
-              </li>
-              <li>Each team consists of 5 players.</li>
-              <li>
-                Teams compete against each other in the preliminary rounds.
-              </li>
-              <li>
-                The winning teams advance to a Deathmatch Round where individual
-                players compete 1v1.
-              </li>
-              <li>
-                The top 3 players from the Deathmatch Round are shortlisted for
-                a final 1v1 battle.
-              </li>
-              <li>
-                The last standing player in the final round is declared the
-                winner.
-              </li>
-            </ul>
-            <p><strong>Point System:</strong></p>
-            <ul>
-              <li>
-                Advancement is determined by match victories and individual
-                performance in the Deathmatch Round.
-              </li>
-            </ul>
-            <p><strong>Player Guidelines:</strong></p>
-            <ul>
-              <li>Only individuals can register.</li>
-              <li>
-                Each player must have a unique name; inappropriate names may be
-                rejected.
-              </li>
-              <li>
-                Player with valid contact details must be designated during
-                registration.
-              </li>
-            </ul>
+          
+          <!-- CS2 Rules Accordion -->
+          <div class="accordion">
+            <div class="accordion-heading">
+              <span>2) Counter-Strike 2 (CS2)</span>
+              <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+              <h3>Rules and Regulations</h3>
+              
+              <p><strong>Match Format:</strong></p>
+              <ul>
+                <li>
+                  Players are randomly assigned into teams of 5 for a 5v5 Team Deathmatch (TDM).
+                </li>
+                <li>Each team consists of 5 players.</li>
+                <li>Teams compete against each other in the preliminary rounds.</li>
+                <li>
+                  The winning teams advance to a Deathmatch Round where individual players compete 1v1.
+                </li>
+                <li>
+                  The top 3 players from the Deathmatch Round are shortlisted for a final 1v1 battle.
+                </li>
+              </ul>
+              
+              <p><strong>Point System:</strong></p>
+              <ul>
+                <li>
+                  Advancement is determined by match victories and individual performance in the Deathmatch Round.
+                </li>
+              </ul>
+              
+              <p><strong>Player Guidelines:</strong></p>
+              <ul>
+                <li>Only individuals can register.</li>
+                <li>Each player must have a unique name; inappropriate names may be rejected.</li>
+                <li>A player with valid contact details must be designated during registration.</li>
+              </ul>
+            </div>
           </div>
-
-          <hr />
-
-          <!-- Asphalt Legends Unite Rules -->
-          <div id="asphalt" class="tab">
-            <h2>Asphalt Legends Unite</h2>
-            <h3>Rules and Regulations</h3>
-            <p><strong>Match Format:</strong></p>
-            <ul>
-              <li>Each match consists of 4 to 6 players.</li>
-              <li>A total of 8 games will be hosted.</li>
-              <li>In each game, the top player qualifies for the finals.</li>
-              <li>
-                Finals: The 8 qualifiers compete in one final race. The winner
-                is declared the champion, and the player with the most
-                knockdowns receives additional perks.
-              </li>
-            </ul>
-            <p><strong>Point System:</strong></p>
-            <ul>
-              <li>
-                Advancement is based solely on placement; no additional point
-                system is applied.
-              </li>
-            </ul>
-            <p><strong>Player Guidelines:</strong></p>
-            <ul>
-              <li>Only individuals can participate.</li>
-              <li>
-                Each player must have a unique name; inappropriate names may be
-                rejected.
-              </li>
-              <li>
-                Player with valid contact details must be designated during
-                registration.
-              </li>
-            </ul>
+          
+          <!-- Asphalt Legends Unite Rules Accordion -->
+          <div class="accordion">
+            <div class="accordion-heading">
+              <span>3) Asphalt Legends Unite</span>
+              <span class="accordion-icon">▼</span>
+            </div>
+            <div class="accordion-content">
+              <h3>Rules and Regulations</h3>
+              
+              <p><strong>Match Format:</strong></p>
+              <ul>
+                <li>Each match consists of 4 to 6 players.</li>
+                <li>A total of 8 games will be hosted.</li>
+                <li>In each game, the top player qualifies for the finals.</li>
+                <li>
+                  Finals: The 8 qualifiers compete in one final race. The winner is declared the champion,
+                  and the player with the most knockdowns receives additional perks.
+                </li>
+              </ul>
+              
+              <p><strong>Point System:</strong></p>
+              <ul>
+                <li>
+                  Advancement is based solely on placement; no additional point system is applied.
+                </li>
+              </ul>
+              
+              <p><strong>Player Guidelines:</strong></p>
+              <ul>
+                <li>Only individuals can participate.</li>
+                <li>Each player must have a unique name; inappropriate names may be rejected.</li>
+                <li>A player with valid contact details must be designated during registration.</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
+        
+        <hr />
+        
+        <!-- Winning and Scoring Criteria Section -->
+        <div class="winning-criteria animate delay-3">
+          <h2>Winning and Scoring Criteria</h2>
+          <ul>
+            <li>The overall winner is determined by cumulative performance and match victories.</li>
+            <li>MVP and Impact Player Awards are given based on exceptional performance.</li>
+          </ul>
+        </div>
+        
 
       <hr />
 
@@ -395,6 +406,7 @@
 
       <!-- Register Button -->
       <a id="registerBtn" class="registerBtn" href="#">Registration starts on 11th April, 2025</a>
+    </div>
     </div>
     <!-- Event Details Ends -->
 
@@ -514,5 +526,6 @@
     <script src="../js/mail-script.js"></script>
     <script src="../js/main.js"></script>
     <script src="./imgSlider.js"></script>
+    <script src="./accordion.js"></script>
   </body>
 </html>

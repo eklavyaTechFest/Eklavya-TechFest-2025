@@ -333,16 +333,16 @@ hr {
   align-items: center;
 }
 
-.tab-links a img {
+.tab-links img {
   height: 50px;
 }
 
-.tab-links a img:hover {
+.tab-links img:hover {
   transform: scale(130%);
 }
 
 @media (max-width: 480px) {
-  .tab-links a img {
+  .tab-links img {
     height: 30px;
   }
   .tab {
