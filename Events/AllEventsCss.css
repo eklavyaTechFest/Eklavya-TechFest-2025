@@ -213,6 +213,10 @@ body {
   color: #ffffff;
 }
 
+.event-notes ul li b {
+  color: white;
+}
+
 .event-notes h3 {
   font-size: 1.8em;
   margin-bottom: 10px;

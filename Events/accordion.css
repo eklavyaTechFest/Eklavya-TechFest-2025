@@ -151,14 +151,14 @@ strong {
 }
 
 /* Notes Section */
-.hardware_ps p {
+/* .hardware_ps p {
   padding: 15px;
   background: #360e09;
   border-left: 5px solid #007bff;
   margin-bottom: 20px;
   font-style: italic;
   color: #d0d0d0;
-}
+} */
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -228,11 +228,11 @@ strong {
   }
 
   /* Make hardware note more compact */
-  .hardware_ps p {
+  /* .hardware_ps p {
     padding: 12px;
     margin-bottom: 15px;
     font-size: 0.9em;
-  }
+  } */
 
   /* Smoother animations */
   .accordion {
