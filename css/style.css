@@ -2652,6 +2652,11 @@ h3 {
 }
 
 /* line 2, ../../Arafath/CL/December/236. Event-02/HTML/scss/_brand.scss */
+
+.brand_active {
+  display: flex;
+  align-items: center;
+}
 .brand_area {
   padding-top: 150px;
 }
