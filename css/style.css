@@ -2653,9 +2653,17 @@ h3 {
 
 /* line 2, ../../Arafath/CL/December/236. Event-02/HTML/scss/_brand.scss */
 
+#gdg {
+  /* border: 2px solid rgb(245, 0, 0); */
+  /* align-self: center; */
+  /* margin: auto 0; */
+  /* height: 5rem; */
+}
+
 .brand_active {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .brand_area {
   padding-top: 150px;
