@@ -1,0 +1,192 @@
+/* Fullscreen container with three items: 
+   - Eklavya logo on left (covers 50% width)
+   - "Collab With" text centered
+   - GDG logo on right (slightly smaller) */
+.home_logo_container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+/* Left: Eklavya Logo covering 50% of width */
+.Eklavya_logo {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+/* Both images inside Eklavya_logo overlay fully,
+   maintain aspect ratio without stretching */
+.Eklavya_logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Background image rotates continuously */
+#logo_bg {
+  z-index: 1;
+  animation: rotate 10s linear infinite;
+  height: 80%;
+}
+
+/* The text image sits on top of the rotating background */
+#logo_text {
+  z-index: 2;
+  height: 80%;
+}
+
+/* Center element: "Collab With" text */
+.home_logo_container > h2 {
+  flex: 1;
+  margin: 0 20px;
+  color: white;
+  text-align: center;
+  align-self: center;
+  font-size: 1.5rem; /* Adjust size as needed */
+  padding-bottom: 6rem;
+}
+
+/* Right element: GDG logo (slightly smaller than the Eklavya logo) */
+#home_gdg_logo {
+  /* Using a percentage of the container height so it scales reasonably */
+  height: 15%;
+  width: auto;
+  object-fit: contain;
+  margin-right: 20px;
+  align-self: center;
+  transform: translateY(-4rem);
+}
+
+/* Rotation keyframes for logo_bg */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 830px) {
+  #home_gdg_logo {
+    /* Using a percentage of the container height so it scales reasonably */
+    height: 19%;
+    width: auto;
+    object-fit: contain;
+    margin-right: 20px;
+    align-self: center;
+    transform: translateY(-4rem);
+  }
+}
+@media screen and (max-width: 564px) {
+  .home_logo_container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 70vh;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0 0rem;
+    transform: translateY(-2rem);
+  }
+
+  /* Left: Eklavya Logo covering 50% of width */
+  .Eklavya_logo {
+    position: relative;
+    width: 90%;
+    height: 40%;
+    transform: translateY(5rem);
+  }
+
+  /* Both images inside Eklavya_logo overlay fully,
+     maintain aspect ratio without stretching */
+  .Eklavya_logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* Background image rotates continuously */
+  #logo_bg {
+    z-index: 1;
+    animation: rotate 10s linear infinite;
+    height: 80%;
+  }
+
+  /* The text image sits on top of the rotating background */
+  #logo_text {
+    z-index: 2;
+    height: 80%;
+  }
+
+  /* Center element: "Collab With" text */
+  .home_logo_container > h2 {
+    flex: auto;
+    margin: 0 20px;
+    color: white;
+    text-align: center;
+    align-self: center;
+    font-size: 1rem; /* Adjust size as needed */
+    padding-bottom: 0rem;
+    transform: translateY(4rem);
+    height: 5rem;
+    display: inline;
+    /* border: 2px solid white; */
+  }
+
+  /* Right element: GDG logo (slightly smaller than the Eklavya logo) */
+  #home_gdg_logo {
+    /* Using a percentage of the container height so it scales reasonably */
+    height: auto;
+    width: 90%;
+    object-fit: cover;
+    margin-right: 0px;
+    align-self: center;
+    transform: translateY(-7rem);
+  }
+}
+/* 
+@media screen and (max-width: 425px) {
+  .home_logo_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .Eklavya_logo {
+    width: 90%;
+    height: auto;
+    max-height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .home_logo_container > h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+
+  #home_gdg_logo {
+    width: 90%;
+    height: 8%;
+    max-width: none;
+    margin-right: 0;
+    transform: none;
+  }
+
+  #logo_bg {
+  }
+  #logo_text {
+  }
+} */
