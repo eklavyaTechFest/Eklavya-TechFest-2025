@@ -475,3 +475,127 @@ hr {
     height: 0.5rem;
   }
 }
+
+/* Prize table  */
+
+.prize_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-family: "Arial", sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.prize_table thead tr {
+  background-color: #6607ff;
+  color: #ffffff;
+  text-align: left;
+}
+
+.prize_table th,
+.prize_table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.prize_table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.prize_table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.prize_table tbody th {
+  /* background-color: #f8f8f8; */
+  font-weight: bold;
+  text-align: center;
+  /* color: #ffffff; */
+}
+
+.prize_table tbody td {
+  font-weight: 500;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .prize_table {
+    border: 0;
+    box-shadow: none;
+  }
+
+  .prize_table thead {
+    display: none; /* Hide the header on mobile */
+  }
+
+  .prize_table tbody,
+  .prize_table tr,
+  .prize_table th,
+  .prize_table td {
+    display: block;
+    text-align: left;
+  }
+
+  .prize_table tr {
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .prize_table tbody th {
+    background-color: #6607ff;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 1.1em;
+    text-align: center;
+    border-radius: 0;
+  }
+
+  .prize_table td {
+    border-bottom: 1px solid #dddddd;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .prize_table td:last-child {
+    border-bottom: 0;
+  }
+
+  .prize_table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  /* Add data labels for mobile view */
+  .prize_table td:nth-of-type(1):before {
+    content: "1st Place";
+  }
+  .prize_table td:nth-of-type(2):before {
+    content: "2nd Place";
+  }
+  .prize_table td:nth-of-type(3):before {
+    content: "3rd Place";
+  }
+}
+
+/* For very small screens */
+@media screen and (max-width: 480px) {
+  .prize_table td {
+    font-size: 0.9em;
+    padding: 10px 10px 10px 45%;
+  }
+
+  .prize_table td:before {
+    left: 10px;
+  }
+}
