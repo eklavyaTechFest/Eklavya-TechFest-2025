@@ -306,16 +306,16 @@ li {
   padding: 1rem;
   font-size: 1.5rem;
   color: white;
-  background-color: #0b780b;
-  border: 3px solid #3eb900;
+  background-color: #780b0b;
+  border: 3px solid #b90000;
   display: block;
   text-align: center;
   scroll-margin-top: 50vh;
 }
 
 .registerBtn:hover {
-  background-color: #0b780b60;
-  border: 3px solid #57ff03;
+  background-color: #780b0b60;
+  border: 3px solid #ff0303;
   color: white;
 }
 
