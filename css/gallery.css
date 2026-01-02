@@ -1,0 +1,372 @@
+:root {
+  --bg-color: #000000;
+  --card-bg: #1e293b;
+  --accent-color: #3b82f6;
+  --accent-hover: #2563eb;
+  --text-color: #f8fafc;
+  --text-muted: #9ca3af;
+  --border-color: #1f2937;
+  --font-main: "Inter", sans-serif;
+  --radius: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.eventHighlight-body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  min-height: 100vh;
+  padding: 1rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Layout Utilities --- */
+.eventHighlight-container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.eventHighlight-section {
+  margin-bottom: 6rem; /* Spacing between major sections */
+}
+
+.eventHighlight-section-header {
+  margin-bottom: 2rem;
+  max-width: 40rem;
+}
+
+/* --- Typography --- */
+.eventHighlight-section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.eventHighlight-section-title::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 32px;
+  background: var(--accent-color);
+  border-radius: 4px;
+}
+
+.eventHighlight-section-desc {
+  color: var(--text-muted);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  padding-left: 1.5rem; /* Indent to align with text of title */
+}
+
+/* --- Header Styles (Main Page Header) --- */
+.eventHighlight-main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.eventHighlight-header-content {
+  flex: 1;
+}
+.eventHighlight-header-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.eventHighlight-eyebrow {
+  color: var(--accent-color);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.eventHighlight-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-top: 0.5rem;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.eventHighlight-text-gradient {
+  background: linear-gradient(to right, #60a5fa, #34d399);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.eventHighlight-subtitle {
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  max-width: 32rem;
+  line-height: 1.5;
+}
+
+/* --- Buttons --- */
+.eventHighlight-btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.eventHighlight-btn-outline {
+  background: transparent;
+  border: 1px solid #374151;
+  color: var(--text-color);
+}
+.eventHighlight-btn-outline:hover {
+  background: #1f2937;
+}
+
+.eventHighlight-btn-primary {
+  background: var(--accent-color);
+  border: none;
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.2);
+}
+.eventHighlight-btn-primary:hover {
+  background: var(--accent-hover);
+}
+
+/* --- Bento Grid --- */
+.eventHighlight-bento-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 180px;
+  gap: 1rem;
+}
+
+/* --- Card Styles --- */
+.eventHighlight-bento-card {
+  position: relative;
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+}
+
+.eventHighlight-bento-card:hover {
+  transform: scale(1.02);
+  z-index: 10;
+}
+
+/* Images inside cards */
+.eventHighlight-card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.eventHighlight-bento-card:hover .eventHighlight-card-img {
+  transform: scale(1.1);
+}
+
+/* Overlay text on images */
+.eventHighlight-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+}
+
+.eventHighlight-tag {
+  background-color: #2563eb;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  width: fit-content;
+  margin-bottom: 0.5rem;
+}
+
+.eventHighlight-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.eventHighlight-card-subtitle {
+  font-size: 0.875rem;
+  color: #d1d5db;
+}
+
+/* --- Stat & Content Cards --- */
+.eventHighlight-stat-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--border-color);
+}
+
+.eventHighlight-stat-icon {
+  font-size: 1.5rem;
+  color: #9ca3af;
+}
+
+.eventHighlight-stat-value {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: white;
+}
+
+.eventHighlight-stat-label {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.25rem;
+}
+
+/* Card Variants */
+.eventHighlight-card-purple {
+  background: linear-gradient(to bottom right, #581c87, #312e81);
+  border: none;
+}
+.eventHighlight-card-purple .eventHighlight-stat-icon {
+  color: rgba(255, 255, 255, 0.6);
+}
+.eventHighlight-card-purple .eventHighlight-stat-label {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.eventHighlight-card-testimonial {
+  background-color: rgba(6, 78, 59, 0.4);
+  border: 1px solid rgba(6, 95, 70, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.eventHighlight-testimonial-text {
+  color: #d1fae5;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.eventHighlight-testimonial-author {
+  color: #10b981;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-top: 0.75rem;
+}
+
+/* --- Footer --- */
+.eventHighlight-footer {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+/* --- Responsive Grid & Spans --- */
+@media (min-width: 768px) {
+  .eventHighlight-body {
+    padding: 2rem;
+  }
+  .eventHighlight-main-header {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .eventHighlight-title {
+    font-size: 3.75rem;
+  }
+  .eventHighlight-bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .eventHighlight-md-col-span-2 {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .eventHighlight-bento-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.eventHighlight-col-span-1 {
+  grid-column: span 1;
+}
+.eventHighlight-row-span-1 {
+  grid-row: span 1;
+}
+.eventHighlight-row-span-2 {
+  grid-row: span 2;
+}
+
+/* --- Lightbox --- */
+#eventHighlight-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+#eventHighlight-lightbox.eventHighlight-visible {
+  opacity: 1;
+}
+
+.eventHighlight-lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: white;
+  font-size: 2.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#eventHighlight-lightbox-img {
+  width: 100%;
+  height: auto;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.eventHighlight-overflow-hidden {
+  overflow: hidden;
+}

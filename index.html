@@ -7,6 +7,17 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link
       rel="shortcut icon"
@@ -27,6 +38,7 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/slicknav.css" />
     <link rel="stylesheet" href="css/inspect.css" />
+    <link rel="stylesheet" href="./css/eventHighlights.css">
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="./css/changed_index.css">
@@ -143,13 +155,246 @@
           <img id="home_gdg_logo" src="./img/Logos/GDG_Ranchi_logo.jpg" alt="">
         </div>
         
-        <div class="countdown-timer">
+        <!-- <div class="countdown-timer">
           <span id="days">00</span>Days, <span id="hours">00</span> Hour :
           <span id="minutes">00</span>Min : <span id="seconds">00</span>Sec
-        </div>
+        </div> -->
       </div>
     </div>
     <!-- slider_area_end -->
+
+    <!-- event_highlights_section_starts -->
+
+    <div class="eventHighlight-div" style="font-family: 'Inter', sans-serif;">
+      <section class="eventHighlight-container eventHighlight-header">
+        <div class="eventHighlight-header-content">
+          <span class="eventHighlight-eyebrow">Event Recap</span>
+          <h1 class="eventHighlight-title" style="font-family: 'Inter', sans-serif;">
+            Eklavya Techfest
+            <span class="eventHighlight-text-gradient" style="font-family: 'Inter', sans-serif;">2025</span>
+          </h1>
+          <p class="eventHighlight-subtitle">
+            Innovation, code, and caffeine. Here is what went down at the region's
+            largest developer summit.
+          </p>
+        </div>
+        <div class="eventHighlight-header-actions">
+          <a
+            class="eventHighlight-btn eventHighlight-btn-outline"
+            href="/contact.html" target="_blank"
+          >
+            Contact Organizers
+          </a>
+          <a href="/gallery2025.html" target="_blank" class="eventHighlight-btn eventHighlight-btn-primary" >
+            View All Images
+          </a>
+        </div>
+      </section>
+  
+      <main class="eventHighlight-container eventHighlight-bento-grid">
+        <!-- 1. Hero Card (Large, 2x2) -->
+        <div
+          class="eventHighlight-bento-card eventHighlight-md-col-span-2 eventHighlight-row-span-2"
+          onclick="openLightbox('./img/eventHighlights/all.jpg')"
+        >
+          <img
+            src="./img/eventHighlights/all.jpg"
+            alt="Keynote Speech"
+            class="eventHighlight-card-img"
+          />
+          <div class="eventHighlight-overlay">
+            <span class="eventHighlight-tag">24th April 2025</span>
+            <h3 class="eventHighlight-card-title" style="font-family: 'Inter', sans-serif;">Successful completion</h3>
+            <p class="eventHighlight-card-subtitle">
+              Team behind Techfest.
+            </p>
+          </div>
+        </div>
+  
+        <!-- 2. Stat Card: Attendees (1x1) -->
+        <div
+          class="eventHighlight-bento-card eventHighlight-stat-card eventHighlight-row-span-1"
+        >
+          <div class="eventHighlight-stat-icon">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div>
+            <h4 class="eventHighlight-stat-value" style="font-family: 'Inter', sans-serif;">1000+</h4>
+            <p class="eventHighlight-stat-label">Attendees</p>
+          </div>
+        </div>
+  
+        <!-- 3. Portrait Image: Coding (1x2) -->
+        <div
+          class="eventHighlight-bento-card eventHighlight-row-span-2"
+          onclick="openLightbox('./img/eventHighlights/News-Cutouts/news-cutout3.jpg')"
+        >
+          <img
+            src="./img/eventHighlights/News-Cutouts/news-cutout3.jpg"
+            alt="Coding Session"
+            class="eventHighlight-card-img"
+          />
+          <div
+            class="eventHighlight-overlay"
+            style="background: transparent"
+          ></div>
+          <div style="position: absolute; bottom: 1rem; left: 1rem; z-index: 2">
+            <p
+              style="
+                color: white;
+                font-weight: 600;
+                font-size: 0.875rem;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+                padding: 3px 10px;
+                background-color: #034ba8;
+                border-radius: 0.5rem;
+              "
+            >
+              News Highlights
+            </p>
+          </div>
+        </div>
+  
+        <!-- 4. Stat Card: Projects (1x1) -->
+        <div
+          class="eventHighlight-bento-card eventHighlight-stat-card eventHighlight-card-purple eventHighlight-row-span-1"
+        >
+          <div class="eventHighlight-stat-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <div>
+            <h4 class="eventHighlight-stat-value" style="font-family: 'Inter', sans-serif;">42</h4>
+            <p class="eventHighlight-stat-label">Projects Built</p>
+          </div>
+        </div>
+  
+        <!-- 5. Wide Image: Team (2x1) -->
+        <div
+          class="eventHighlight-bento-card eventHighlight-md-col-span-2 eventHighlight-row-span-1"
+          onclick="openLightbox(`./img/eventHighlights/evening2.jpg`)"
+        >
+          <img
+            src="./img/eventHighlights/evening2.jpg"
+            alt="Team Photo"
+            class="eventHighlight-card-img"
+          />
+          <div
+            style="
+              position: absolute;
+              inset: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: rgba(0, 0, 0, 0.4);
+              opacity: 0;
+              transition: opacity 0.3s;
+            "
+            onmouseover="this.style.opacity='1'"
+            onmouseout="this.style.opacity='0'"
+          >
+            <i
+              class="fa-solid fa-expand text-white"
+              style="font-size: 2rem; color: white"
+            ></i>
+          </div>
+        </div>
+  
+        <!-- 6. Quote/Testimonial (1x1) -->
+        <div
+          class="eventHighlight-bento-card eventHighlight-card-testimonial eventHighlight-row-span-1"
+        >
+          <i
+            class="fa-solid fa-quote-left"
+            style="color: #10b981; font-size: 1.25rem; margin-bottom: 0.5rem"
+          ></i>
+          <p class="eventHighlight-testimonial-text">
+            "The level of energy this year was absolutely insane. Can't wait for
+            2026."
+          </p>
+          <p class="eventHighlight-testimonial-author">- Organizing Commitee, BCA Dept.</p>
+        </div>
+  
+        <!-- 7. Stat Card: Prize Pool (1x1) -->
+        <div
+          class="eventHighlight-bento-card eventHighlight-stat-card eventHighlight-row-span-1"
+        >
+          <div class="eventHighlight-stat-icon" style="color: #eab308">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <div>
+            <h4 class="eventHighlight-stat-value" style="font-family: 'Inter', sans-serif;">₹15k</h4>
+            <p class="eventHighlight-stat-label">Prize Pool</p>
+          </div>
+        </div>
+  
+        <!-- 8. Square Image: Fun (1x1) -->
+        <div
+          class="eventHighlight-bento-card eventHighlight-row-span-1"
+          onclick="openLightbox('./img/eventHighlights/decorationTeam.jpg')"
+        >
+          <img
+            src="./img/eventHighlights/decorationTeam.jpg"
+            alt="Gaming Zone"
+            class="eventHighlight-card-img"
+          />
+        </div>
+  
+        <!-- 9. Social Media Callout (1x1) -->
+        <div
+          class="eventHighlight-bento-card eventHighlight-card-social eventHighlight-row-span-1"
+        >
+          <i
+            class="fa-brands fa-instagram eventHighlight-social-gradient-icon"
+          ></i>
+          <h5 class="eventHighlight-social-title" style="font-family: 'Inter', sans-serif;">Check the Stories</h5>
+          <a href="https://www.instagram.com/dspmu_techfest25?igsh=MXdjOXJhZGF2cWt1MA==" target="_blank" class="eventHighlight-social-link">@dspmu_techfest25</a>
+        </div>
+  
+        <!-- 10. Horizontal (2x1) -->
+        <div
+          class="eventHighlight-bento-card eventHighlight-md-col-span-2 eventHighlight-row-span-1"
+          onclick="openLightbox('./img/eventHighlights/Expert-Session/Expert-Session-3.jpg')"
+        >
+          <img
+            src="./img/eventHighlights/Expert-Session/Expert-Session-3.jpg"
+            alt="Workshop"
+            class="eventHighlight-card-img"
+          />
+          <div
+            style="
+              position: absolute;
+              bottom: 1rem;
+              left: 1rem;
+              background: rgba(0, 0, 0, 0.5);
+              padding: 0.25rem 0.75rem;
+              border-radius: 0.25rem;
+              backdrop-filter: blur(4px);
+            "
+          >
+            <p style="color: white; font-weight: 600; font-size: 0.75rem">
+              Expert Session
+            </p>
+          </div>
+        </div>
+      </main>
+  
+      
+  
+      <!-- Lightbox Modal -->
+      <div id="eventHighlight-lightbox">
+        <button onclick="closeLightbox()" class="eventHighlight-lightbox-close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+  
+        <div class="eventHighlight-lightbox-content">
+          <img id="eventHighlight-lightbox-img" src="" alt="Full screen view" />
+          <p id="eventHighlight-lightbox-caption"></p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- event_highlights_section_ends -->
 
     <!-- partner_area_starts  -->
     <div class="brand_area black_bg">
@@ -1222,6 +1467,7 @@
     <script src="js/tilt.jquery.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/countdown-timer.js"></script>
+    <script src="js/eventHighlights.js"></script>
 
     <!--contact js-->
     <script src="js/contact.js"></script>
